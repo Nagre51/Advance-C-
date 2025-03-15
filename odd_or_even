@@ -1,0 +1,52 @@
+#include<stdio.h>
+/* DOC
+Name:Dnyandev Nagre
+Date: 08/09/2023
+Discription:
+Sample Input: Enter the value of 'n' : -2
+Sample Output:-2 is negative even num
+DOC */
+
+int main()
+{
+//Take ip from use
+int num;
+printf("Enter the value of 'n' :");
+//Scan the ip from user
+scanf("%d",&num);
+//To check the number reminder  is equal to or not./ to num is positive or not
+if (num%2==0)
+{
+        //To check the number is grether than zero or not
+if(num>0)
+{
+printf("%d is positive even number",num);
+}
+//To check the num is positive or nagative
+else if(num!=0)
+{
+printf("%d is negative even number",num);
+}
+else
+//Enter num is zero/ not positve or negative
+{
+printf("%d 0 is neither odd nor even",num);
+}
+}
+//To check is positve or nagative odd num
+else if(num%2!=0)
+{
+if(num>0)
+//Less than for nagative or grether than for positve odd
+{
+printf("%d  is positive odd number",num);
+}
+else
+{
+printf("%d  is negative odd number",num);
+}
+}
+
+return 0;
+
+}
